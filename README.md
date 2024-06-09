@@ -6,11 +6,10 @@ OS:
    , UEFI (Unified Extensible Firmware Interface)  
   
    UEFI:  
-   , initializes hardware components and. 
-   , performs a Power-On Self Test (POST).  
+   , initializes hardware components   
+   , performs a POST. 
    , looks for a bootable device
-     (like a hard drive, SSD, or USB drive)  
-   , loads the bootloader from that device. 
+   , loads the bootloader    
   
   Bootloader:
   GRUB, LILO, systemd-boot, ..
