@@ -1,6 +1,6 @@
 # AIOS-docs
 
-OS:
+OS nutshell:  
 1. BIOS/UEFI Initialization:  
    , BIOS (Basic Input/Output System)  
    , UEFI (Unified Extensible Firmware Interface)  
@@ -12,15 +12,13 @@ OS:
    , seeks for a bootable device. 
    , loads the bootloader    
   
-  Bootloader:
-  GRUB, LILO, systemd-boot, ..
-  ,loads OS kernel into memory
-     ,may provide a BOOT menu
-     , for selecting between OS
-       or kernel configurations.
-  , Kernersville Initialization 
+2. Bootloader:  
+   GRUB, LILO, systemd-boot, ..  
+  ,loads OS kernel into memory. 
+     , may provide a BOOT menu  
+  , Kernel Initialization starts   
 
-  Kernel Initialization:
+3. Kernel Initialization:
   , Linux kernel is loaded into memory
   , and starts executing
   , initializes hardware
@@ -30,4 +28,5 @@ OS:
     the first process is PID 1
    
   .init Process:
-     old: from systemd, Upstart, or OpenRC in modern systems) is responsible for bringing up the user space and starting system services.init reads its configuration files (e.g., /etc/inittab for SysV init, or various unit files for systemd) and starts the necessary services and daemons.System Initialization Scripts:Depending on the init system, various scripts and services are started. For example:In SysV init, scripts in /etc/rc.d/ and /etc/init.d/ are executed.In systemd, unit files in /etc/systemd/system/ and /lib/systemd/system/ are processed.Login Process:After the system services and daemons are started, the system presents a login prompt (for graphical login managers like GDM, LightDM, or text-based getty processes).When a user logs in, the shell initialization files are processed.
+     from systemd, Upstart, or OpenRC.  
+   is responsible for bringing up the user space and starting system services.init reads its configuration files (e.g., /etc/inittab for SysV init, or various unit files for systemd) and starts the necessary services and daemons.System Initialization Scripts:Depending on the init system, various scripts and services are started. For example:In SysV init, scripts in /etc/rc.d/ and /etc/init.d/ are executed.In systemd, unit files in /etc/systemd/system/ and /lib/systemd/system/ are processed.Login Process:After the system services and daemons are started, the system presents a login prompt (for graphical login managers like GDM, LightDM, or text-based getty processes).When a user logs in, the shell initialization files are processed.
