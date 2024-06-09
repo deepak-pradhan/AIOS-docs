@@ -1,17 +1,17 @@
 # AIOS-docs
 
 OS:
-1. BIOS/UEFI Initialization:
-   , BIOS (Basic Input/Output System)
-   , UEFI (Unified Extensible Firmware Interface)
-
-   UEFI:
-   , initializes hardware components and
-   , performs a Power-On Self Test (POST).
+1. BIOS/UEFI Initialization:  
+   , BIOS (Basic Input/Output System)  
+   , UEFI (Unified Extensible Firmware Interface)  
+  
+   UEFI:  
+   , initializes hardware components and. 
+   , performs a Power-On Self Test (POST).  
    , looks for a bootable device
-     (like a hard drive, SSD, or USB drive)
-   , loads the bootloader from that device
-
+     (like a hard drive, SSD, or USB drive)  
+   , loads the bootloader from that device. 
+  
   Bootloader:
   GRUB, LILO, systemd-boot, ..
   ,loads OS kernel into memory
