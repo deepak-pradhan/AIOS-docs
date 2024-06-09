@@ -18,15 +18,40 @@ OS nutshell:
      , may provide a BOOT menu  
   , Kernel Initialization starts   
 
-3. Kernel Initialization:
-  , Linux kernel is loaded into memory
-  , and starts executing
-  , initializes hardware
-     , mounts the root filesystem
+3. Kernel Initialization:  
+  , Linux kernel is loads into memory  
+  , Kernel starts executing. 
+    , initializes hardware
+    , mounts the root filesystem
        from bootloader configuration
-  , starts the init process
-    the first process is PID 1
+  , kernel starts init process PID 1
+  , starts. init Processes. 
    
-  .init Process:
-     from systemd, Upstart, or OpenRC.  
-   is responsible for bringing up the user space and starting system services.init reads its configuration files (e.g., /etc/inittab for SysV init, or various unit files for systemd) and starts the necessary services and daemons.System Initialization Scripts:Depending on the init system, various scripts and services are started. For example:In SysV init, scripts in /etc/rc.d/ and /etc/init.d/ are executed.In systemd, unit files in /etc/systemd/system/ and /lib/systemd/system/ are processed.Login Process:After the system services and daemons are started, the system presents a login prompt (for graphical login managers like GDM, LightDM, or text-based getty processes).When a user logs in, the shell initialization files are processed.
+  
+4 .init Process:
+   from systemd, Upstart, or OpenRC.  
+   , bringing up the user space.  
+   , starting system services. 
+   
+  .init 
+  , reads its configuration files
+    (e.g., /etc/inittab for SysV init, or various unit files for systemd)  
+  , starts the necessary services and daemons
+  , System is Initialized.
+ 
+  System Initialization Scripts:  
+  Depending on the init system
+  , SysV  
+    /etc/rc.d/ and /etc/init.d/   
+  , systemd  
+    /etc/systemd/system/  
+    /lib/systemd/system/  
+  , starts system services & daemons  
+  , gives Login Prompt  
+   
+
+5. Login Process  
+   GUI: GDM, LightDM, ...  
+   Servers : sh - text-based getty  
+   , User logs in  
+   , runs  .profile.  
