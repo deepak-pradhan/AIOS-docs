@@ -7,8 +7,9 @@ OS:
   
    UEFI:  
    , initializes hardware components   
-   , performs a POST. 
-   , looks for a bootable device
+     ? north / south bridge   
+   , performs a POST  
+   , seeks for a bootable device. 
    , loads the bootloader    
   
   Bootloader:
