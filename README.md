@@ -9,22 +9,21 @@ A --- B
 
 1. BIOS/UEFI Initialization:  
    , BIOS (Basic Input/Output System)  
-   , UEFI (Unified Extensible Firmware Interface)  
-  
-   UEFI:  
-   , initializes hardware components   
-     ? north / south bridge   
+   , UEFI (Unified Extensible Firmware Interface)
    , performs POST  
-   , seeks for a bootable device   
-   , loads the bootloader    
   
-2. Bootloader:  
+   POST:  
+   , initializes hardware components   
+   , seeks for a bootable device   
+   , starts the Boot Loader    
+  
+3. Boot Loader:  
    GRUB, LILO, systemd-boot, ..  
   ,loads OS kernel into memory     
      , may provide a BOOT menu   
   , Kernel Initialization starts   
 
-3. Kernel Initialization:  
+4. Kernel Initialization:  
   , Linux kernel is loads into memory  
   , Kernel starts executing   
     , initializes hardware  
