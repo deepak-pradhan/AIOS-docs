@@ -1,6 +1,12 @@
 # AIOS-docs
 
 OS nutshell:  
+
+```mermaid
+grapg TD
+A --- B
+```
+
 1. BIOS/UEFI Initialization:  
    , BIOS (Basic Input/Output System)  
    , UEFI (Unified Extensible Firmware Interface)  
