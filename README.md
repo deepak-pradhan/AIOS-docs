@@ -3,7 +3,7 @@
 OS nutshell:  
 
 ```mermaid
-grapg TD
+graph TD
 A --- B
 ```
 
